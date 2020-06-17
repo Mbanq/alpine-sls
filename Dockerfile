@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM mhart/alpine-node:10
 
 MAINTAINER Mbanq <dev@mbanq.com>
 
@@ -6,8 +6,6 @@ RUN apk update && apk upgrade && apk add \
     bash \
     git \
     grep \
-    nodejs \
-    npm \
     openjdk8-jre
 
 ENV NODE_ENV development
