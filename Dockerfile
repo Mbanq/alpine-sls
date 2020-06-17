@@ -7,6 +7,7 @@ RUN apk update && apk upgrade && apk add \
     git \
     grep \
     nodejs \
+    npm \
     openjdk8-jre
 
 ENV NODE_ENV development
