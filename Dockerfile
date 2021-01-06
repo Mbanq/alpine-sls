@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:12
+FROM mhart/alpine-node:15.5.1
 
 MAINTAINER Mbanq <dev@mbanq.com>
 
