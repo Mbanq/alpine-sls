@@ -8,7 +8,12 @@ RUN apk update -q && apk upgrade -q && apk add -q \
     grep \
     openjdk8-jre \
     python3 \
-    py3-pip
+    curl \
+    py3-pip \
+    ansible; \
+    pip3 install --quiet --upgrade pip awscli boto3; \
+    ansible-galaxy collection install community.aws amazon.aws community.general community.postgresql; \
+    mkdir /etc/ansible/
 
 ENV NODE_ENV development
 
